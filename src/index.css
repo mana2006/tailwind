@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .check-content {
+        @apply pb-10 flex gap-8 items-center md:mx-0
+    }
+
+    .hover-menu-li {
+        @apply cursor-pointer p-2 hover:text-purple-500 rounded-lg transition-all duration-300
+    }
+}
