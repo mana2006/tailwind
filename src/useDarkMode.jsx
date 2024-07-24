@@ -8,8 +8,7 @@ const useDarkMode = () => {
     setDarkMode(!isDarkMode);
   };
   useEffect(() => {
-    const html = window.document.documentElement; //all documentElement in window
-    console.log(html.classList);
+    const html = window.document.documentElement; //get element html root in page
     const prev = isDarkMode ? "light" : "dark";
     html.classList.remove(prev);
     const next = isDarkMode ? "dark" : "light";
